@@ -1,210 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #test {
-            width: 500px;
-            height: 500px;
-            margin-left: 20px;
-            clear: both;
-            font-size: 0;
-            position: relative;
-        }
+      #test {
+        width: 744px;
+        height: 648px;
+        margin-left: 20px;
+        clear: both;
+        font-size: 0;
+        position: relative;
+      }
 
-        .tt {
-            width: 166px;
-            height: 166px;
-            border: 1px solid #fff;
-            border-left: none;
-            border-top: none;
+      .tt {
+        width: 248px;
+        height: 216px;
+        border: 1px solid #fff;
+        border-left: none;
+        border-top: none;
 
-            position: absolute;
-        }
+        position: absolute;
+      }
 
-        .tt:first-child {
-            top: 0;
-            left: 0;
-        }
+      .tt:first-child {
+        top: 0;
+        left: 0;
+      }
 
-        .tt:nth-child(2) {
-            top: 0;
-            left: 167px;
-        }
+      .tt:nth-child(2) {
+        top: 0;
+        left: 248px;
+      }
 
-        .tt:nth-child(3) {
-            top: 0;
-            left: calc(168px + 166px);
-        }
+      .tt:nth-child(3) {
+        top: 0;
+        left: calc(248px + 247px);
+      }
 
-        .tt:nth-child(4) {
-            top: calc(167px);
-            left: 0;
-        }
+      .tt:nth-child(4) {
+        top: calc(216px);
+        left: 0;
+      }
 
-        .tt:nth-child(5) {
-            top: calc(167px);
-            left: 167px;
-        }
+      .tt:nth-child(5) {
+        top: calc(216px);
+        left: 248px;
+      }
 
-        .tt:nth-child(6) {
-            top: calc(167px);
-            left: calc(168px + 166px);
-        }
+      .tt:nth-child(6) {
+        top: calc(216px);
+        left: calc(248px + 247px);
+      }
 
-        .tt:nth-child(7) {
-            top: calc(168px + 166px);
-            left: 0;
-        }
+      .tt:nth-child(7) {
+        top: calc(216px + 216px);
+        left: 0;
+      }
 
-        .tt:nth-child(8) {
-            top: calc(168px + 166px);
-            left: 167px;
-        }
+      .tt:nth-child(8) {
+        top: calc(216px + 216px);
+        left: calc(248px);
+      }
 
-        .tt:nth-child(9) {
-            top: calc(168px + 166px);
-            left: calc(168px + 166px);
-        }
+      .tt:nth-child(9) {
+        top: calc(216px + 216px);
+        left: calc(248px + 247px);
+      }
 
-        .tt:hover {
-            cursor: pointer;
-        }
+      .tt:hover {
+        cursor: pointer;
+      }
 
-        .tt:nth-child(3n) {
-            border-right: none;
-        }
+      .tt:nth-child(3n) {
+        border-right: none;
+      }
 
-        .start {
-            margin-top: 20px;
-            margin-left: 20px;
-            padding: 15px;
-            border: none;
-            border-radius: 5px;
-        }
+      .start {
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+      }
 
-        .start:hover {
-            background-color: #542487;
-            color: white;
-        }
+      .start:hover {
+        background-color: #542487;
+        color: white;
+      }
+      .btn {
+      }
+      .btn1 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+      }
+      .btn1 div {
+        width: 50px;
+        height: 50px;
+      }
+      .border {
+        border: 1px solid #000;
+        font-size: 30px;
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="test">
-        <div class="tt">
-            <img src="1.png" alt="">
-        </div>
-        <div class="tt">
-            <img src="2.png" alt="">
-        </div>
-        <div class="tt">
-            <img src="3.png" alt="">
-        </div>
-        <div class="tt">
-            <img src="4.png" alt="">
-        </div>
-        <div class="tt">
-            <img src="5.png" alt="">
-        </div>
-        <div class="tt">
-            <img src="6.png" alt="">
-        </div>
-        <div class="tt">
-            <img src="7.png" alt="">
-        </div>
-        <div class="tt">
-            <img src="8.png" alt="">
-        </div>
-        <div class="tt">
-            <!-- <img src="" alt=""> -->
-        </div>
+      <div class="tt">
+        <img src="1.png" alt="" />
+      </div>
+      <div class="tt">
+        <img src="2.png" alt="" />
+      </div>
+      <div class="tt">
+        <img src="3.png" alt="" />
+      </div>
+      <div class="tt">
+        <img src="4.png" alt="" />
+      </div>
+      <div class="tt">
+        <img src="5.png" alt="" />
+      </div>
+      <div class="tt">
+        <img src="6.png" alt="" />
+      </div>
+      <div class="tt">
+        <img src="7.png" alt="" />
+      </div>
+      <div class="tt">
+        <img src="8.png" alt="" />
+      </div>
+      <div class="tt">
+        <!-- <img src="" alt=""> -->
+      </div>
     </div>
     <button class="start">开始游戏</button>
+    <div class="btn">
+      <div class="btn1">
+        <div></div>
+        <div class="border" onclick="onUp()">上</div>
+        <div></div>
+      </div>
+      <div class="btn1">
+        <div class="border" onclick="onLeft()">左</div>
+        <div></div>
+        <div class="border" onclick="onRight()">右</div>
+      </div>
+      <div class="btn1">
+        <div></div>
+        <div class="border" onclick="onDown()">下</div>
+        <div></div>
+      </div>
+    </div>
     <script>
-        var test = document.querySelector('#test')
-        var arr = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png"]
-        var imgs = [];
-        var starts = document.querySelector('.start')
-        var tt = document.querySelectorAll('.tt')
-        var obj;
+      var test = document.querySelector("#test");
+      var arr = [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png",
+        "5.png",
+        "6.png",
+        "7.png",
+        "8.png",
+      ];
+      var imgs = [];
+      var starts = document.querySelector(".start");
+      var tt = document.querySelectorAll(".tt");
+      var obj;
 
-        starts.onclick = () => {
-            startGame()
+      starts.onclick = () => {
+        startGame();
+      };
+
+      var blank,
+        imgs = [];
+      tt.forEach((el, index) => {
+        if (el.children.length == 0) {
+          blank = index;
+          // console.log(blank);
         }
-
-        var blank, imgs = [];
-        tt.forEach((el, index) => {
-            if (el.children.length == 0) {
-                blank = index;
-                // console.log(blank);
-            }
-            imgs.push(el.children[0])
-        })
-
-
-
-        window.onkeydown = (e) => {
-            
-            if (e.key == 'ArrowDown') {
-                if (blank - 3 < 0) { return }
-                tt[blank].appendChild(imgs[blank - 3]);
-                blank = blank - 3
-            } else if (e.key == 'ArrowUp') {
-                if (blank + 3 > 8) { return }
-                tt[blank].appendChild(imgs[blank + 3]);
-                blank = blank + 3
-            } else if (e.key == 'ArrowRight') {
-                if (blank - 1 < 0 || blank - 1 == 5 || blank - 1 == 2) { return }
-                tt[blank].appendChild(imgs[blank - 1]);
-                blank = blank - 1
-
-            } else if (e.key == 'ArrowLeft') {
-                if (blank + 1 > 8 || blank + 1 == 3 || blank + 1 == 6) { return }
-                tt[blank].appendChild(imgs[blank + 1]);
-                blank = blank + 1
-            }
-            if (e.key == 'ArrowDown' || e.key == 'ArrowUp' || e.key == 'ArrowRight' || e.key == 'ArrowLeft') {
-                imgs=[]
-                tt.forEach((el) => {
-                    imgs.push(el.children[0])
-                })
-                if (judge(imgs)) {
-                    alert('pppppp')
-                }
-            }
-
+        imgs.push(el.children[0]);
+      });
+      function onUp() {
+        if (blank + 3 > 8) {
+          return;
         }
-
-
-        function startGame() {
-            var arr1 = arr.slice(0);
-            var count = 0;
-            while (arr1.length != 0) {
-                var num = Math.floor(Math.random() * arr1.length);
-                imgs[count].src = arr1[num];
-                count++;
-                arr1.splice(num, 1);
-            }
+        tt[blank].appendChild(imgs[blank + 3]);
+        blank = blank + 3;
+        isRight()
+      }
+      function onDown(){
+         if (blank - 3 < 0) {
+            return;
+          }
+          tt[blank].appendChild(imgs[blank - 3]);
+          blank = blank - 3;
+          isRight()
+      }
+      function onLeft(){
+         if (blank + 1 > 8 || blank + 1 == 3 || blank + 1 == 6) {
+            return;
+          }
+          tt[blank].appendChild(imgs[blank + 1]);
+          blank = blank + 1;
+          isRight()
+      }
+      function onRight(){
+        if (blank - 1 < 0 || blank - 1 == 5 || blank - 1 == 2) {
+            return;
+          }
+          tt[blank].appendChild(imgs[blank - 1]);
+          blank = blank - 1;
+          isRight()
+      }
+      function isRight() {
+        imgs = [];
+        tt.forEach((el) => {
+          imgs.push(el.children[0]);
+        });
+        if (judge(imgs)) {
+          alert("你好厉害呀！！！fzz");
         }
-        //判断是否成功
-        function judge(imgs) {
-            for (var i = 0; i < imgs.length; i++) {
-                if (imgs[i] != undefined) {
-                    // console.log(imgs[i].getAttribute('src'));
-                    console.log(i + 1, imgs[i].getAttribute('src')[0]);
-                    if ((i + 1) != imgs[i].getAttribute('src')[0]) {
-                        return false;
-                    }
-                }
-            }
-            return true;
+      }
+      window.onkeydown = (e) => {
+        if (e.key == "ArrowDown") {
+          if (blank - 3 < 0) {
+            return;
+          }
+          tt[blank].appendChild(imgs[blank - 3]);
+          blank = blank - 3;
+        } else if (e.key == "ArrowUp") {
+          if (blank + 3 > 8) {
+            return;
+          }
+          tt[blank].appendChild(imgs[blank + 3]);
+          blank = blank + 3;
+        } else if (e.key == "ArrowRight") {
+          if (blank - 1 < 0 || blank - 1 == 5 || blank - 1 == 2) {
+            return;
+          }
+          tt[blank].appendChild(imgs[blank - 1]);
+          blank = blank - 1;
+        } else if (e.key == "ArrowLeft") {
+          if (blank + 1 > 8 || blank + 1 == 3 || blank + 1 == 6) {
+            return;
+          }
+          tt[blank].appendChild(imgs[blank + 1]);
+          blank = blank + 1;
         }
+        if (
+          e.key == "ArrowDown" ||
+          e.key == "ArrowUp" ||
+          e.key == "ArrowRight" ||
+          e.key == "ArrowLeft"
+        ) {
+          imgs = [];
+          tt.forEach((el) => {
+            imgs.push(el.children[0]);
+          });
+          if (judge(imgs)) {
+            alert("你好厉害呀！！！fzz");
+          }
+        }
+      };
+
+      function startGame() {
+        var arr1 = arr.slice(0);
+        var count = 0;
+        while (arr1.length != 0) {
+          var num = Math.floor(Math.random() * arr1.length);
+          imgs[count].src = arr1[num];
+          count++;
+          arr1.splice(num, 1);
+        }
+      }
+      //判断是否成功
+      function judge(imgs) {
+        for (var i = 0; i < imgs.length; i++) {
+          if (imgs[i] != undefined) {
+            // console.log(imgs[i].getAttribute('src'));
+            console.log(i + 1, imgs[i].getAttribute("src")[0]);
+            if (i + 1 != imgs[i].getAttribute("src")[0]) {
+              return false;
+            }
+          }
+        }
+        return true;
+      }
     </script>
-</body>
-
+  </body>
 </html>
