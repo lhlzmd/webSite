@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #test {
+            width: 500px;
+            height: 500px;
+            margin-left: 20px;
+            clear: both;
+            font-size: 0;
+
+        }
+        .tt {
+            width: 166px;
+            height: 166px;
+            border: 1px solid #fff;
+            border-left: none;
+            border-top: none;
+            display: inline-block;
+        }
+        .tt:hover{
+            cursor: pointer;
+        }
+        .tt:nth-child(3n) {
+            border-right: none;
+        }
+        .start{
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        .start:hover{
+            background-color: #542487;
+            color: white;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    hello world
+    <div id="test">
+        <div class="tt" ondragover="over(event)" ondrop="drop(this)">
+            <img src="1.png" alt="" draggable="true"  ondragstart="start(this)">
+        </div>
+        <div class="tt" ondragover="over(event)" ondrop="drop(this)">
+            <img src="2.png" alt="" draggable="true"  ondragstart="start(this)">
+        </div>
+        <div class="tt" ondragover="over(event)" ondrop="drop(this)">
+            <img src="3.png" alt="" draggable="true"  ondragstart="start(this)">
+        </div>
+        <div class="tt" ondragover="over(event)" ondrop="drop(this)">
+            <img src="4.png" alt="" draggable="true"  ondragstart="start(this)">
+        </div>
+        <div class="tt" ondragover="over(event)" ondrop="drop(this)">
+            <img src="5.png" alt="" draggable="true"  ondragstart="start(this)">
+        </div>
+        <div class="tt" ondragover="over(event)" ondrop="drop(this)">
+            <img src="6.png" alt="" draggable="true"  ondragstart="start(this)">
+        </div>
+        <div class="tt" ondragover="over(event)" ondrop="drop(this)">
+            <img src="7.png" alt="" draggable="true"  ondragstart="start(this)">
+        </div>
+        <div class="tt" ondragover="over(event)" ondrop="drop(this)">
+            <img src="8.png" alt="" draggable="true"  ondragstart="start(this)">
+        </div>
+        <div class="tt" ondragover="over(event)" ondrop="drop(this)">
+            <img src="9.png" alt="" draggable="true"  ondragstart="start(this)">
+        </div>
+    </div>
+    <button class="start">开始游戏</button>
+    <script>
+        var arr=["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png"]
+        var imgs=document.querySelectorAll('img');
+        var starts=document.querySelector('.start')
+        var obj;
+        starts.onclick=()=>{
+            startGame()
+        }
+        function start(thisImg) {
+            obj = thisImg;
+        }
+        function over(e) {
+            e.preventDefault();
+        }
+        function drop(t) {
+            obj.parentElement.appendChild(t.children[0])
+            t.appendChild(obj);
+            imgs=document.querySelectorAll('img');
+            if(judge(imgs)){
+                alert('Congratulations')
+            }
+        }
+        function startGame(){
+            var arr1=arr.slice(0);
+            var count=0;
+            while(arr1.length!=0){
+                var num=Math.floor(Math.random()*arr1.length);
+                imgs[count].src=arr1[num];
+                count++;
+                arr1.splice(num,1);
+            }
+        }
+        //判断是否成功
+        function judge(imgs){
+            // console.log(imgs);
+            // console.log('ppp');
+            for(var i=0;i<imgs.length;i++){
+                console.log(imgs[i].getAttribute('src')[0]);
+                console.log(imgs[i].src);
+                if((i+1)!=imgs[i].getAttribute('src')[0]){
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
 </body>
+
 </html>
